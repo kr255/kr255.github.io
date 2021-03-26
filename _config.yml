@@ -25,7 +25,7 @@ twitter_username: jekyllrb
 github_username:  kr255
 
 # Build settings
-markdown: redcarpet
+markdown: kramdownthat
 theme: minima
 plugins:
   - jekyll-feed

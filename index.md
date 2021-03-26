@@ -7,7 +7,7 @@
 
 layout: default
 title: Home
-#permalink: /
+permalink: /
 ---
 
-Hello World!
+Hello World!!
