@@ -6,8 +6,8 @@
 
 
 layout: default
-title: Home
+title:     Kamran Raza Resume
 permalink: /
 ---
 
-Hello World!!
+
