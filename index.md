@@ -10,6 +10,7 @@ title:     Kamran Raza Resume
 permalink: /
 ---
 
+<<<<<<< HEAD
 {% include jobs.html%}
 
 ### {{employer1 |  upcase }} 
@@ -51,3 +52,6 @@ permalink: /
 ## Related Projects
 
 ---
+=======
+##Hello World!!
+>>>>>>> 5a3d083fc4803282bd7f06f7a5bd28ab4c46a39f
