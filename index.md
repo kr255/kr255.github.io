@@ -10,7 +10,6 @@ title:     Kamran Raza Resume
 permalink: /
 ---
 
-<<<<<<< HEAD
 {% include jobs.html%}
 
 ### {{employer1 |  upcase }} 
