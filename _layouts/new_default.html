@@ -1,0 +1,28 @@
+<!-- {%- comment -%} Based on layout in minima theme {%- endcomment -%} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class = "mainBody">
+    <!-- {%- include header.html -%} -->
+        {% include header.html %}
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+
+           {{ content }}
+
+        </div>
+
+    </main>
+
+    {%- include footer.html -%}
+    {% include github-corner.html %}
+
+</body>
+<style>
+    .mainBody{margin: 10px 15px 15px 20px; font-family: Arial, sans-serif;}
+        
+    </style>
+
+</html>

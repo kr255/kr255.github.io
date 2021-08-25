@@ -5,14 +5,18 @@
 #layout: home
 
 
-layout: default
-title:     Kamran Raza Resume
+layout: new_default
+title:  Kamran Raza Resume
 permalink: /
+
 ---
 
-{% include jobs.html%}
+<!-- {% include jobs.html%} -->
+{% include_relative relatedProjects.md%}
 
-### {{employer1 |  upcase }} 
+{{ CS610 }}
+
+<!-- ### {{employer1 |  upcase }} 
 **{{BSdegree}}**
 --- May 2018
 
@@ -28,7 +32,7 @@ permalink: /
 
 **{{programmerA}}**
 {% for lines in jobDescNJIT %}
-    * {{ lines | upcase }}
+    {{ lines | upcase }}
 {% endfor %}
  
 
@@ -37,7 +41,7 @@ permalink: /
 
 **{{programmer}}**
 {% for lines in jobDescBURL %}
-    * {{ lines | upcase }}
+    {{ lines | upcase }}
 {% endfor %}
 
 **{{employer3}}**
@@ -45,9 +49,12 @@ permalink: /
 
 **{{coop}}**
 {% for lines in jobDescPEF %}
-    * {{ lines | upcase }}
+    {{ lines | upcase }}
 {% endfor %}
 
+---
 ## Related Projects
 
----
+--- -->
+
+

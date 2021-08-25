@@ -13,12 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: First Time Jekyll
 email: kr255@njit.edu
-description: >- # this means to ignore newlines until "baseurl:"
-  This is meant to serve as my resume. Instead of emailing PDFs I will just send links
-baseurl: "/jekyll_test_two" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: >- # this means to ignore newlines until "baseurl:" This is meant to serve as my resume. Instead of emailing PDFs I will just send links
+baseurl: "/kr255.github.io" 
+
+# the subpath of your site, e.g. /blog
+url: "" 
+
+# the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  kr255
 
