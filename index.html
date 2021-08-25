@@ -16,13 +16,12 @@ permalink: /
     </div> 
     
     <div class="degree">
-        <a href="assets/Academic_Transcript_UG.pdf" download>     
-        <p class="para" >{{ BSdegree }} - May 2018</p>
-        <span class="tooltiptext">Download Undergraduate Transcript</span></a>
-        <a href="assets/Academic_Transcript_G.pdf" download>
-        <p class="para" >{{ MSdegree }} - August 2021</p>
-        <span class="tooltiptext">Download Graduate Transcript</span>
-    </a>
+        <li><a href="assets/Academic_Transcript_UG.pdf" download>     
+        {{ BSdegree }} - May 2018</a>
+        <span class="tooltiptext">Download Undergraduate Transcript</span></li>
+        <li><a href="assets/Academic_Transcript_G.pdf" download>
+        {{ MSdegree }} - August 2021</a>
+        <span class="tooltiptext">Download Graduate Transcript</span></li>
     </div>
 
 </div><hr></hr>
@@ -30,28 +29,28 @@ permalink: /
 <div class="EducationInfo">
 
     <div class="Uni"> 
-        <p>{{employer1}}</p> 
+        {{employer1}} 
     </div> 
     
     <div class="jobtitle">{{ programmerA }} - September 2019 - 2020</div>
     {% for lines in jobDescNJIT %}
-            <p>&emsp;{{ lines }}.</p>
+            <li>{{ lines }}.</li>
         {% endfor %}
 
-</div><hr></hr>
+</div><br>
 
 <div class="EducationInfo">
     <div class="Uni">
-        <p>{{employer2}}</p>
+        {{employer2}}
     </div>
 
     <div class="jobtitle">{{programmer}} - January 2019 - September 2019</div> 
         {% for lines in jobDescBURL %}
-            <p>&emsp;{{ lines }}.</p>
+            <li>{{ lines }}</li>
         {% endfor %}
 </div><hr></hr>
 
-<div class="EducationInfo">
+<!-- <div class="EducationInfo">
     <div class="Uni">
         <p>{{employer3}}</p>
     </div>
@@ -60,19 +59,19 @@ permalink: /
         {% for lines in jobDescPEF %}
             <p>&emsp;{{ lines }}.</p>
         {% endfor %}
-</div><hr></hr>
+</div><hr></hr> -->
 
 <div class="relatedProjects">
     <div class=titleRP>Related Projects</div>
     <div class="Uni2"> 
-        <p>{{employer1}}</p>
+        {{employer1}}
     </div>
     <div class="IS601">
         <a href="https://github.com/kr255/IS601_Project_3"><div class=dateStart>Summer 2021 - Completed
             <span class="tooltiptext">Repository Link</span>
         </div></a>
         {% for lines in is601 %}
-            <p>&emsp;{{ lines }}.</p>
+            <li>{{ lines }}.</li>
         {% endfor %} 
     </div>
     <div class="IS601">
@@ -80,38 +79,37 @@ permalink: /
             <span class="tooltiptext">Repository Link</span>
         </div></a>
         {% for lines in is601-2 %}
-            <p>&emsp;{{ lines }}.</p>
+            <li>{{ lines }}.</li>
         {% endfor %} 
     </div>
     <div class="CS610">
             <div class=dateStart>Summer 2020 - Completed</div>
             {% for lines in CS610 %}
-                <p>&emsp;{{ lines }}.</p>
+                <li>{{ lines }}.</li>
             {% endfor %} 
     </div>
     <div class="CS611">
         <div class=dateStart>Spring 2020 - Completed</div>
         {% for lines in CloudSys %}
-            <p>&emsp;{{ lines }}.</p>
+            <li>{{ lines }}.</li>
         {% endfor %} 
     </div>
 
 </div><hr></hr>
 <div class="EducationInfo">
     <div class="Uni">
-        <p>{{skillss}}</p>
+        {{skillss}}
     </div>
     {% for lines in Skills %}
-        <p>&emsp;{{ lines }}.</p>
+        {{ lines }}.
     {% endfor %}
 </div><hr></hr>
 
 <div class="EducationInfo">
     <div class="Uni">
-        <p>Operating Systems</p>
+        Operating Systems
     </div>
-    
-        <p>&emsp;Linux (Ubuntu, CentOS, Ubuntu Server), Windows (7, 8.1, 10).</p>
+        Linux (Ubuntu, CentOS, Ubuntu Server), Windows (7, 8.1, 10).
 
 </div><hr></hr>
 <!-- <div class="wrapper-page-content">
@@ -139,12 +137,12 @@ permalink: /
 
     .wrapper-page-content{ font-size: 150%;}
 
-    .titleRP{font-size: larger; font-weight: bolder;}
+    .titleRP{font-size: larger; font-weight: bold;}
     .Uni2{font-size: large; font-weight: bolder;  font-style: italic;}
     .dateStart{font-size: large; 
         font-style: italic; 
         font-weight: bold;   
-        border-bottom: 1px dotted black;}
+    }
 
     .relatedProjects
     .IS601
@@ -186,11 +184,8 @@ permalink: /
     }
 
 
-    .EducationInfo.degree.para:hover
-    .tooltiptext{visibility: visible;}
-
-    .relatedProjects:hover 
-    .tooltiptext {
+     
+    .tooltiptext:hover {
         visibility: visible;}
 
 </style>
