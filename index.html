@@ -29,6 +29,20 @@ permalink: /
 <div class="EducationInfo">
 
     <div class="Uni"> 
+        {{employer0}} 
+    </div> 
+    
+    <div class="jobtitle">{{ programmerA }} - MAy 2022 - March 2024</div>
+    {% for lines in jobDescMUFG %}
+            <li>{{ lines }}.</li>
+        {% endfor %}
+
+</div><br>
+
+
+<div class="EducationInfo">
+
+    <div class="Uni"> 
         {{employer1}} 
     </div> 
     
@@ -49,17 +63,6 @@ permalink: /
             <li>{{ lines }}</li>
         {% endfor %}
 </div><hr></hr>
-
-<!-- <div class="EducationInfo">
-    <div class="Uni">
-        <p>{{employer3}}</p>
-    </div>
-
-    <div class="jobtitle">{{coop}} - June 2017 – October 2017</div> 
-        {% for lines in jobDescPEF %}
-            <p>&emsp;{{ lines }}.</p>
-        {% endfor %}
-</div><hr></hr> -->
 
 <div class="relatedProjects">
     <div class=titleRP>Related Projects</div>
@@ -117,7 +120,7 @@ permalink: /
     <div class="Uni">
         Operating Systems
     </div>
-        Linux (Ubuntu, CentOS, Ubuntu Server), Windows (7, 8.1, 10).
+    Windows(powershell, cmd.exe), Linux(Arch), FreeRTOS.
 
 </div><hr></hr>
 <!-- <div class="wrapper-page-content">
